@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.top-bar{
+    background-color: #FF005C;
+    position: fixed;
+    z-index: 1;
+    height: 75px;
+    width: 100%;
+    margin: 0px;
+    margin-top: -75px;
+        
+}
+
+.sidenav {
+  margin-top: 75px;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 38px;
+}
+
+.sidenav a {
+  padding: 15px 0px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #FF005C;
+}
+
+.main {
+  margin-top: 75px;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  /* font-size: 28px; Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 12px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.notification {
+  /* background-color: #555; */
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  /* background: red; */
+}
+.notification_icon{
+    background-color: white;
+    height: 23px;
+    width: 23px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 1px;
+  right: 9px;
+  padding: 3px 7px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+}
+
+.image-hotel{
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.search-hotel{
+    align-items: center;
+    width: 60%;
+    border-color: transparent;
+    background-color: #F9F9F9;
+    color: grey;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    height: 40px;
+    padding-left: 20px;
+}
+input[type=text]:focus{
+    border-color: transparent;
+}
+
+</style>
+</head>
+<body>
+<div class="top-bar">
+    <div class="row">
+        <div class="col-3">
+            <img src="img.png"style="margin: 10px 20px; width: 60px; height: 50px">
+        </div>
+        <div class="col-7">
+            <input class="justify-content-center search-hotel" type="text" name="" id="" placeholder="Search hotels">
+        </div>
+        <div class="col-1" style="margin-top: 8px;">
+            <a href="#" class="notification">
+                <img class="notification_icon" src="notification.png" alt="">
+                <span class="badge">3</span>
+            </a>
+        </div>
+        <div class="col-1">
+            <img src="akiv.jpg" alt="" style="height: 40px; width:40px; border-radius: 50%; margin: 10px 0; padding: 0px;">
+            <span style="color: grey; margin:10px 8px;">Akib</span>
+        </div>
+    </div>
+    
+    
+    
+</div>
+<div>
+<div class="sidenav">
+  <a href="#about">HOTEL</a>
+  <a href="#services">FLIGHT</a>
+  <a href="#clients">CAR RENTAL</a>
+  <a href="#contact">TOURS</a>
+</div>
+
+<div class="main">
+    <div class="row" style="padding:0px; height: 250px">
+        <div class="col image-hotel">
+            <img src="img-1.jpg" alt="" style="width: 100%; height: 100%;">
+        </div>
+        <div class="col image-hotel">
+            <img src="img-2.jpg" alt="" style="width: 100%; height: 100%;">
+        </div>
+        <div class="col image-hotel">
+            <img src="img-3.jpg" alt="" style="width: 100%; height: 100%;">
+        </div>
+    </div>
+
+    <div class="" style="height: 40px; padding: 0px; width: 100%;">
+        <div style="margin-top: 20px; float: left; margin-left: 20px; color: grey; font-size: 22px;">
+            <span>HOTEL LAS PALMAS</span>
+        </div>
+        <div style="float: right; display: flex;">
+            <div style="margin-top: 15px; margin-right:30px"><u style=" color: #FF005C; ">Albufelra, Portugal </u></div>
+            <div style="margin-right:-12px; color:white; padding: 5px 30px; background-color: ; text-align: center; background-color: #FF005C; float: right; width: auto;">
+                <span style="font-size: 20px;">8.6</span><br>
+                <span style="font-size: 10px; margin-top: -10px;">42% VOTES</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #F9F9F9; margin-top: 25px;">
+        <div class="row" style="padding: 40px 70px;">
+
+            <div class="col-7">
+                <div style="background-color: white; border-radius: 2px; padding: 30px 25px; box-shadow: 5px 10px 8px 5px #F9F9F9;">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime alias ea 
+                    cumque esse accusamus porro inventore expedita deserunt, adipisci tempora quia a sed suscipit dicta voluptatibus itaque, sapiente error est.</p>
+                    <p style="margin-bottom: 30px;">Assumenda quod earum sequi consequatur corrupti corporis perspiciatis provident quas voluptates. Qui.</p>
+                    <hr style="color: grey;">
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col">
+                            <ul style="list-style: none; line-height: 30px;">
+                                <li>Close to the beach</li>
+                                <li>Free airport shuttle</li>
+                                <li>Air conditing and heating</li>
+                                <li>We speak all language</li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <ul style="list-style: none; line-height: 30px;">
+                                <li>Breakfast included</li>
+                                <li>Free wifi in all rooms</li>
+                                <li>Pets allowed</li>
+                                <li>Perfect for families</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr style="color: grey;">
+
+                    <p style="margin-top: 50px;">Lucy and 3 other friends recommended this hotel</p>
+
+                </div>
+            </div>
+
+            <div class="col-3" style="padding: 0px 40px">
+                <div style="background-color: white; padding: 30px 25px; box-shadow: 5px 10px 8px 5px #F9F9F9;">
+                    <!-- <div style="padding:0px; margin:0px; background-image: url('left-quote.png'); "> -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit vitae sint non voluptatum quidem harum saepe quam.</p>
+                    <!-- </div> -->
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="akiv.jpg" alt="" style="height: 40px; width:40px; border-radius: 50%; padding: 0px;">
+                        </div>
+                        <div class="col-4" style="line-height: 12px;">
+                            <span style="font-size: 12px; padding: 0px;">NICK SMITH</span><br>
+                            <span style="font-size: 8px; color: grey">Feb 23rd, 2017</span>
+                        </div>
+                        <div class="col-1">
+                            <span style="color: #FF005C; text-align: center; font-size: 20px;">7.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:30px; background-color: white; padding: 30px 25px; box-shadow: 5px 10px 8px 5px #F9F9F9;">
+                    <!-- <div style="padding:0px; margin:0px; background-image: url('left-quote.png'); "> -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Velit vitae sint non voluptatum quidem harum saepe quam.</p>
+                    <!-- </div> -->
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="akiv.jpg" alt="" style="height: 40px; width:40px; border-radius: 50%; padding: 0px;">
+                        </div>
+                        <div class="col-4" style="line-height: 12px;">
+                            <span style="font-size: 12px; padding: 0px;">MARY THOMAS</span><br>
+                            <span style="font-size: 8px; color: grey">Sept 13th,2017 </span>
+                        </div>
+                        <div class="col-1">
+                            <span style="color: #FF005C; text-align: center; font-size: 20px;">9.3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <p style="margin-top: 50px; text-align: center;">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR SELECTED DATES</p>
+                <div style="background-color: #FF005C; color: white; padding: 10px 20px; border-radius: 40px 0px 0px 40px; font-size: 15px; margin-right: -90px;">
+                    <p style="text-align: center;">BOOK <br> NOW</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+</div>
+</body>
+</html>
